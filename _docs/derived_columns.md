@@ -16,7 +16,7 @@ On your sample sheet, you will need to point to the input file or files for each
 This is common, and it works in a pinch with Looper, but what if the data get moved, or your filesystem changes, or you switch servers or move institutes? Will this data still be there in 2 years? Do you want long file paths cluttering your annotation sheet? What if you have 2 or 3 input files? Do you want to manually manage these unwieldy absolute paths?
 
 
-``Looper`` makes it really easy to do better: you can make one or your annotation columns into a flexible ``derived column`` that will be populated based on a source template you specify in the ``project_config.yaml``. What was originally ``/long/path/to/sample.fastq.gz`` would instead contain just a key, like ``source1``. Columns that use a key like this are called ``derived columns``. Here's an example of the same sheet using a ``derived column`` for ``file_path``:
+``Looper`` makes it really easy to do better: you can make one of your annotation columns into a flexible ``derived column`` that will be populated based on a source template you specify in the ``project_config.yaml``. What was originally ``/long/path/to/sample.fastq.gz`` would instead contain just a key, like ``source1``. Columns that use a key like this are called ``derived columns``. Here's an example of the same sheet using a ``derived column`` for ``file_path``:
 
 ```
 "sample_name", "library", "organism", "time", "file_path"
